@@ -6,6 +6,6 @@
 class Tests {
 public:
 	int IntegerSorter(int a[]);
-	float FloatSorter(float b[]);
+	float FloatSorter(float b[], int size);
 } ;
 #endif // TESTS_H

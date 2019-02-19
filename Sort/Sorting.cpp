@@ -15,6 +15,8 @@ int main()
 	double myinf = numeric_limits<double>::infinity(); // Defines the value of infinity
 	int a[10]; // Array of integers which will be randomly made between numbers 1-100
 	float b[10] = { myinf, -myinf, 0.0f, -0.0f, 1.7f, 3.4f, -5.9f, 1.0f, 1.011f, 1.5f };; // List of floats including infinity variables positive and negative
+	float sea [1] = {34.67}; // sea is an acronym for Single Element Array
+	float nea[1] = { 34.67 }; // nea is an acronym for No Elements Array2
 	// End of variables
 
 	while (1)
@@ -36,12 +38,17 @@ int main()
 		else if (choice == '2')
 		{
 			cout << "\nTest 2: Sorting Float Objects" << endl;
-			tests.FloatSorter(b); // Sorts floating point objects.
+			tests.FloatSorter(b, 10); // Sorts floating point objects.
 		}
 		else if (choice == '3')
 		{
-			cout << "\nTest 3: Sort a list of 0" << endl;
-			
+			cout << "\nTest 3: Sort a list of 0 elements" << endl;
+			tests.FloatSorter(sea, 1);
+		}
+		else if (choice == '4')
+		{
+			cout << "\nTest 3: Sort a list of 1 element" << endl;
+			tests.FloatSorter(nea, 1);
 		}
 		else if (choice == 'q' || choice == 'Q') // Quits the programs.
 		{
