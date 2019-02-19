@@ -10,11 +10,12 @@ int main()
 {
 	system("cls"); //Windows Clear Command
 	Tests tests; // Tests object allows me to refer to its functions.
+	// Variables 
 	char choice = '1';
-	int a[10]; // Array of integers which will be randomly made between numbers 1-100
 	double myinf = numeric_limits<double>::infinity(); // Defines the value of infinity
+	int a[10]; // Array of integers which will be randomly made between numbers 1-100
 	float b[10] = { myinf, -myinf, 0.0f, -0.0f, 1.7f, 3.4f, -5.9f, 1.0f, 1.011f, 1.5f };; // List of floats including infinity variables positive and negative
-	cout << "Sorting Program\n" << endl;
+	// End of variables
 
 	while (1)
 	{
@@ -24,7 +25,7 @@ int main()
 		cout << "2. Sort floating point list" << endl;
 		cout << "q. quit " << endl;
 		cout << "\n> ";
-		cin >> choice;
+		std::cin >> choice;
 
 		if (choice == '1')
 		{
@@ -34,12 +35,12 @@ int main()
 		}
 		else if (choice == '2')
 		{
-			cout << "\nTest 2: Sorting Float Numbers" << endl;
+			cout << "\nTest 2: Sorting Float Objects" << endl;
 			tests.FloatSorter(b); // Sorts floating point objects.
 		}
 		else if (choice == '3')
 		{
-			cout << "\nTest 3: Sorting Integers and Floating Point numbers" << endl;
+			cout << "\nTest 3: Sort a list of 0" << endl;
 			
 		}
 		else if (choice == 'q' || choice == 'Q') // Quits the programs.
@@ -53,19 +54,19 @@ int main()
 		}
 	}
 
-	cin.get();
+	std::cin.get();
  
 }
 
 //REQUIREMENTS //
 //1. Sort a finite amount of real numbers. (Create an algorithm) 
 	//1a. Can sort integers - DONE
-	//1b. Floating point numbers
+	//1b. Floating point numbers - DONE
 //2. Sort just floating point objects
-	//a. real numbers
-	//b. negative zero
-	//c. negative infinity
-	//d. posiive infinity
+	//a. real numbers - DONE
+	//b. negative zero - DONE
+	//c. negative infinity - DONE
+	//d. posiive infinity - DONE
 	//e. NaN objects
 //3. Can sort a list of length 0 - Return error
 //4. Can sort a list of length 1

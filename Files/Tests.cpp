@@ -57,37 +57,45 @@ int Tests::IntegerSorter(int a[])
 	
 	return 0;
 };//Done
-
 float Tests::FloatSorter(float b[10])
 {
+	int s1 = sizeof(b); // 40
+	int s2 = sizeof(b[0]); // 4
+	int length = s1 / s2;
+
 	cout << "Float Sorter Function" << endl;
 	cout << "Before sorting:";
-	for(int i = 0; i < 10; i++)
-	{
-		cout << b[i] << " ";
+	if (length < 1) {
+		cout << "Error: array doesn't have any elements."
 	}
-	//----------------
-	//Sorts the floating point objects
-	for (int i = 0; i <= 8; i++)
-	{
-		for (int j = i + 1; j <= 9; j++)
+	else if {
+		for (int i = 0; i < 10; i++)
 		{
-			if (b[i] > b[j])
+			cout << b[i] << " ";
+		}
+		//----------------
+		//Sorts the floating point objects
+		for (int i = 0; i <= 8; i++)
+		{
+			for (int j = i + 1; j <= 9; j++)
 			{
-				float temp = b[i];
-				b[i] = b[j];
-				b[j] = temp;
+				if (b[i] > b[j])
+				{
+					float temp = b[i];
+					b[i] = b[j];
+					b[j] = temp;
+				}
 			}
 		}
+		//--------------
+		cout << "\nAfter sorting: ";
+		for (int i = 0; i < 10; i++)
+		{
+			cout << b[i] << " ";
+		}
 	}
-	//--------------
-	cout << "\nAfter sorting: ";
-	for (int i = 0; i < 10; i++)
-	{
-		cout << b[i] << " ";
-	}
-
 	cin.ignore();
 	cin.get();
+
 	return 0.0f;
 }
