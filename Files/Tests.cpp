@@ -32,7 +32,7 @@ int Tests::IntegerSorter(int a[])
 		{
 			if (a[i] > a[j])
 			{
-				int temp = a[i];
+				float temp = a[i];
 				a[i] = a[j];
 				a[j] = temp;
 			}
@@ -74,7 +74,7 @@ float Tests::FloatSorter(float b[10])
 		{
 			if (b[i] > b[j])
 			{
-				int temp = b[i];
+				float temp = b[i];
 				b[i] = b[j];
 				b[j] = temp;
 			}
