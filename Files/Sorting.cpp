@@ -13,7 +13,7 @@ int main()
 	char choice = '1';
 	int a[10]; // Array of integers which will be randomly made between numbers 1-100
 	double myinf = numeric_limits<double>::infinity(); // Defines the value of infinity
-	float b[10] = { myinf, -myinf, 0.0f, 1.7f, 3.4f, -5.9f, 1.0f, 1.011f, 1.01f, 1.5f };; // List of floats including infinity variables positive and negative
+	float b[10] = { myinf, -myinf, 0.0f, -0.0f, 1.7f, 3.4f, -5.9f, 1.0f, 1.011f, 1.5f };; // List of floats including infinity variables positive and negative
 	cout << "Sorting Program\n" << endl;
 
 	while (1)
